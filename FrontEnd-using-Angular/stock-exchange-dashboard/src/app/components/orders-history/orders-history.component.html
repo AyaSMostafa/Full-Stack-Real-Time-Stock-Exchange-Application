@@ -1,0 +1,12 @@
+<p>orders-history works!</p>
+<!-- src/app/components/orders-history/orders-history.component.html -->
+
+<div>
+    <h2>Orders History</h2>
+    <ul>
+      <li *ngFor="let order of orders">
+        Order Type: {{ order.orderType }} - Stock Symbol: {{ order.stockSymbol }} - Quantity: {{ order.quantity }} - Timestamp: {{ order.timestamp | date }}
+      </li>
+    </ul>
+  </div>
+  

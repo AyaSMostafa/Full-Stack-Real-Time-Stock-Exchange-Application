@@ -1,0 +1,15 @@
+/* orders-history.component.css */
+
+.orders-history {
+    padding: 20px;
+  }
+  
+  .orders-history h2 {
+    color: #333;
+  }
+  
+  .orders-history p {
+    margin: 5px 0;
+    color: #666;
+  }
+  

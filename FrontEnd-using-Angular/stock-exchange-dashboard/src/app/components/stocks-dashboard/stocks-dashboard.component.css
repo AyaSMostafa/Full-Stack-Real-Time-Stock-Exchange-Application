@@ -1,0 +1,15 @@
+/* stocks-dashboard.component.css */
+
+.stocks-dashboard {
+    padding: 20px;
+  }
+  
+  .stocks-dashboard h2 {
+    color: #333;
+  }
+  
+  .stocks-dashboard p {
+    margin: 5px 0;
+    color: #666;
+  }
+  
