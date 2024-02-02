@@ -1,8 +1,27 @@
-<div class="stocks-container">
-  <div *ngFor="let stock of stocks" class="stock-item">
-    <p>symbol: {{ stock.symbol }}</p>
-    <p>Name: {{ stock.name }}</p>
-    <p>Price: {{ stock.currentPrice | currency }}</p>
-    <p>Last Updated: {{ stock.timestamp | date: 'medium' }}</p>
+<!-- <div class="stocks-container">
+  <div *ngFor="let stock of stocks"  class="stock-info">
+    <p class="stock-symbol">symbol: {{ stock.symbol }}</p>
+    <p class="stock-name">Name: {{ stock.name }}</p>
+    <p class="stock-price">Price: ${{ stock.currentPrice.toFixed(2) | currency}}</p>
+    <p class="stock-timestamp">Last Updated: {{ stock.timestamp | date: 'medium' }}</p>
   </div>
-</div> 
+</div>  -->
+<!-- stock.component.html -->
+<table class="stock-table">
+  <thead>
+    <tr>
+      <th>Symbol</th>
+      <th>Name</th>
+      <th>Current Price</th>
+      <th>Last Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let stock of stocks">
+      <td>{{ stock.symbol }}</td>
+      <td>{{ stock.name }}</td>
+      <td>${{ stock.currentPrice.toFixed(2) | currency}}</td>
+      <td>{{ stock.timestamp | date: 'medium' }}</td>
+    </tr>
+  </tbody>
+</table>

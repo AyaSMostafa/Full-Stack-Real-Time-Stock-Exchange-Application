@@ -6,7 +6,8 @@ using Microsoft.EntityFrameworkCore.Migrations;
 namespace StockExchange.Migrations
 {
     /// <inheritdoc />
-    public partial class InitialCreateDB : Migration
+    
+    public partial class intialcreation : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)

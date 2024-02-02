@@ -24,7 +24,7 @@ export class RegisterComponent {
     this.authService.register(this.registerData).subscribe(
       (response) => {
         console.log('Registration successful', response);
-        alert('Registration successful');
+        alert('Account Added Success');
         this.router.navigate(['/stocks-dashboard']);
       },
       (error) => {

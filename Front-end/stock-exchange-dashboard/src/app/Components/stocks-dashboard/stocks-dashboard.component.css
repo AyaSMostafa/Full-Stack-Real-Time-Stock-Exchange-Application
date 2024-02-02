@@ -1,14 +1,16 @@
-/* stocks-dashboard.component.css */
+/* stock.component.css */
+.stock-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
 
-.stocks-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .stock-item {
-    border: 1px solid #ccc;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-  }
-  
+.stock-table th, .stock-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+.stock-table th {
+  background-color: #f2f2f2;
+}

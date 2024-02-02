@@ -1,15 +1,32 @@
 /* orders-history.component.css */
 
 .orders-container {
-    display: flex;
-    flex-wrap: wrap;
-  }
-  
-  .order-item {
-    border: 1px solid #2196F3;
-    background-color: #f1f1f1;
-    padding: 10px;
-    margin: 10px;
-    width: 200px;
-  }
-  
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.order-item {
+  background-color: #f0f0f0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 15px;
+  width: 200px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease;
+
+  margin: 20px;
+}
+
+.order-item:hover {
+  background-color: #e0e0e0;
+}
+
+.order-item p {
+  margin: 8px 0; /* Add margin to the top and bottom of each paragraph */
+  font-size: 16px;
+  color: black; /* Change text color to blue */
+  font-weight: bold; /* Make text bold */
+}
+
+/* Add more styles as needed */

@@ -12,8 +12,8 @@ using StockExchange.Models;
 namespace StockExchange.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20240202042558_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20240202132659_intialcreation")]
+    partial class intialcreation
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

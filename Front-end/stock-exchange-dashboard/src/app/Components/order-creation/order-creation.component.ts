@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { OrderServiceService } from '../../services/services/order-service.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-order-creation',
@@ -10,7 +11,7 @@ import { OrderServiceService } from '../../services/services/order-service.servi
 export class OrderCreationComponent {
   orderForm: FormGroup;
 
-  constructor(private formBuilder: FormBuilder, private orderService: OrderServiceService) {
+  constructor(private formBuilder: FormBuilder, private orderService: OrderServiceService, private router: Router) {
     this.orderForm = this.formBuilder.group({
       stockSymbol: ['', Validators.required],
       orderType: ['', Validators.required],
@@ -24,6 +25,7 @@ export class OrderCreationComponent {
       this.orderService.createOrder(orderData).subscribe(
         createdOrder => {
           console.log('Order created successfully:', createdOrder);
+          this.router.navigate(['/orders-history']);
           // Optionally: Refresh orders history or perform other actions
         },
         error => {
