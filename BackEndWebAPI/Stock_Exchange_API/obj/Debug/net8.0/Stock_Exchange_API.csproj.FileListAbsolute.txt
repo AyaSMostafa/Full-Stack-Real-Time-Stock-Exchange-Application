@@ -1,0 +1,8 @@
+D:\EGID interview task\Full-Stack-Real-Time-Stock-Exchange-Application\BackEndWebAPI\Stock_Exchange_API\obj\Debug\net8.0\Stock_Exchange_API.csproj.AssemblyReference.cache
+D:\EGID interview task\Full-Stack-Real-Time-Stock-Exchange-Application\BackEndWebAPI\Stock_Exchange_API\obj\Debug\net8.0\Stock_Exchange_API.GeneratedMSBuildEditorConfig.editorconfig
+D:\EGID interview task\Full-Stack-Real-Time-Stock-Exchange-Application\BackEndWebAPI\Stock_Exchange_API\obj\Debug\net8.0\Stock_Exchange_API.AssemblyInfoInputs.cache
+D:\EGID interview task\Full-Stack-Real-Time-Stock-Exchange-Application\BackEndWebAPI\Stock_Exchange_API\obj\Debug\net8.0\Stock_Exchange_API.AssemblyInfo.cs
+D:\EGID interview task\Full-Stack-Real-Time-Stock-Exchange-Application\BackEndWebAPI\Stock_Exchange_API\obj\Debug\net8.0\Stock_Exchange_API.csproj.CoreCompileInputs.cache
+D:\EGID interview task\Full-Stack-Real-Time-Stock-Exchange-Application\BackEndWebAPI\Stock_Exchange_API\obj\Debug\net8.0\Stock_Exchange_API.MvcApplicationPartsAssemblyInfo.cs
+D:\EGID interview task\Full-Stack-Real-Time-Stock-Exchange-Application\BackEndWebAPI\Stock_Exchange_API\obj\Debug\net8.0\Stock_Exchange_API.MvcApplicationPartsAssemblyInfo.cache
+D:\EGID interview task\Full-Stack-Real-Time-Stock-Exchange-Application\BackEndWebAPI\Stock_Exchange_API\obj\Debug\net8.0\Stock_Exchange_API.sourcelink.json
