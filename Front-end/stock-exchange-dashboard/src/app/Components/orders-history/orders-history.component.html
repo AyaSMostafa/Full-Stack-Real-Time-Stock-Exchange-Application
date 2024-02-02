@@ -1,0 +1,11 @@
+<!-- orders-history.component.html -->
+
+<div class="orders-container">
+    <div *ngFor="let order of orders" class="order-item">
+      <p>Order Type: {{ order.orderType }}</p>
+      <p>Stock Symbol: {{ order.stockSymbol }}</p>
+      <p>Quantity: {{ order.quantity }}</p>
+      <p>Timestamp: {{ order.timestamp | date: 'medium' }}</p>
+    </div>
+  </div>
+  

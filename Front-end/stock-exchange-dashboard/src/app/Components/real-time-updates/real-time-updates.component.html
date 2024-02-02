@@ -1,0 +1,10 @@
+<!-- real-time-updates.component.html -->
+
+<div class="update-container">
+    <div *ngFor="let update of updateData" class="update-item">
+      <p>{{ update.symbol }}</p>
+      <p>New Price: {{ update.currentPrice | currency }}</p>
+      <p>Last Updated: {{ update.timestamp | date: 'medium' }}</p>
+    </div>
+  </div>
+  

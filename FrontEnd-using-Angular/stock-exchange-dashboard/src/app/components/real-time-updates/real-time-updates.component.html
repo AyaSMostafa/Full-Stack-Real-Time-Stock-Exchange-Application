@@ -3,7 +3,9 @@
 <div class="real-time-updates">
     <h2>Real-Time Updates</h2>
     <div *ngFor="let update of updates">
-      <p>{{ update.symbol }} - New Price: {{ update.newPrice | currency }}</p>
+      <!-- <p>{{ update.symbol }} - New Price: {{ update.newPrice | currency }}</p> -->
+      <p>Stock: {{ update.stockSymbol }} - Updated Price: {{ update.newPrice }} </p>
+
     </div>
   </div>
   

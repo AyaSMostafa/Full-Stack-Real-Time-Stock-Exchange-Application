@@ -1,0 +1,14 @@
+/* stocks-dashboard.component.css */
+
+.stocks-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .stock-item {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  

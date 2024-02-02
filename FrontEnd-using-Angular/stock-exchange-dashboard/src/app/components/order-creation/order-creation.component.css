@@ -1,10 +1,25 @@
-/* order-creation.component.css */
+/* order-form.component.css */
 
-.order-creation {
-    padding: 20px;
-  }
-  
-  .order-creation h2 {
-    color: #333;
-  }
-  
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  margin-bottom: 10px;
+  padding: 8px;
+}
+
+button {
+  padding: 10px;
+  background-color: #4caf50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}

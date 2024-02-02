@@ -14,8 +14,16 @@ export class StocksDashboardComponent {
 
   ngOnInit(): void {
     // Fetch stocks data from the service
-    this.stockService.getStocks().subscribe((stocks) => {
+    this.stockService.getRealTimeStockData().subscribe((stocks) => {
       this.stocks = stocks;
+    });
+    // Subscribe to real-time updates
+    this.stockService.getStockUpdates().subscribe(update => {
+      // Update stock data based on real-time updates
+      const index = this.stocks.findIndex(stock => stock.symbol === update.symbol);
+      if (index !== -1) {
+        this.stocks[index].currentPrice = update.price;
+      }
     });
   }
 }

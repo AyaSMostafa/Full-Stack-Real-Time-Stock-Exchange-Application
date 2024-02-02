@@ -4,9 +4,15 @@
 <div>
     <h2>Stocks Dashboard</h2>
     <ul>
-      <li *ngFor="let stock of stocks">
-        {{ stock.symbol }} - {{ stock.currentPrice | currency }}
-      </li>
+        <li *ngFor="let stock of stocks">
+            Symbol: {{ stock.symbol }} - Current Price: {{ stock.currentPrice }}
+        </li>
     </ul>
-  </div>
-  
+</div>
+<div class="stocks-container">
+    <div *ngFor="let stock of stocks" class="stock-card">
+        <h3>{{ stock.symbol }}</h3>
+        <p>Current Price: {{ stock.currentPrice  }}</p>
+        <!-- Add more details as needed -->
+    </div>
+</div>

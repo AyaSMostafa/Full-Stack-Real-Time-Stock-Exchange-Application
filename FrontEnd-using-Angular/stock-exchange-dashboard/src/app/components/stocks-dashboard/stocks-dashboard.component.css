@@ -1,15 +1,16 @@
 /* stocks-dashboard.component.css */
 
-.stocks-dashboard {
-    padding: 20px;
-  }
-  
-  .stocks-dashboard h2 {
-    color: #333;
-  }
-  
-  .stocks-dashboard p {
-    margin: 5px 0;
-    color: #666;
-  }
-  
+.stocks-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.stock-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px;
+  width: 200px;
+  text-align: center;
+}

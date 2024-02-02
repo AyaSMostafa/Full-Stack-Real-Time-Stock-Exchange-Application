@@ -12,4 +12,15 @@
     margin: 5px 0;
     color: #666;
   }
-  
+  /* orders-history.component.css */
+
+.orders-history {
+  max-width: 600px;
+  margin: 20px auto;
+}
+
+.order-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin: 10px 0;
+}

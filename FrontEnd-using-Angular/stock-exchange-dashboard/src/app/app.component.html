@@ -2,9 +2,11 @@
 
 <header>
   <h1>{{ title }}</h1>
-  <!-- Add navigation links if needed -->
+  <nav>
+    <a routerLink="/">Stocks Dashboard</a>
+    <a routerLink="/order-form">Order Form</a>
+    <a routerLink="/orders-history">Orders History</a>
+  </nav>
 </header>
 
-<main>
-  <router-outlet></router-outlet>
-</main>
+<router-outlet></router-outlet>

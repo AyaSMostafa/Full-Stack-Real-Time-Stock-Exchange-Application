@@ -14,11 +14,10 @@ export class OrderService {
 
   createOrder(orderData: any): Observable<any> {
     // Implement your logic to create an order on the server
-    return this.http.post(`${this.apiUrl}/create-order`, orderData);
+    return this.http.post(`${this.apiUrl}`, orderData);
   }
 
-  getOrdersHistory(): Observable<any> {
-    // Implement your logic to fetch orders history from the server
-    return this.http.get(`${this.apiUrl}/orders-history`);
+  getOrders(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/orders`);
   }
 }

@@ -13,13 +13,22 @@ export class StockService {
 
   constructor(private http: HttpClient) {}
 
-  getStocks(): Observable<any> {
-    // Implement your logic to fetch stocks from the server
-    return this.http.get(`${this.apiUrl}/stocks`);
+  getRealTimeStockData(): Observable<any[]> {
+    return this.http.get<any[]>(`${this.apiUrl}/stocks`);
   }
+  getStockUpdates(): Observable<any> {
+    // Connect to WebSocket for real-time updates
+    // Example: Replace 'ws://localhost:5000/stockHub' with your actual WebSocket endpoint
+    return new Observable(observer => {
+      const socket = new WebSocket('ws://localhost:5209/stockHub');
 
-  getRealTimeUpdates(): Observable<any> {
-    // Implement your logic to get real-time updates for stocks
-    return this.http.get(`${this.apiUrl}/real-time-updates`);
+      socket.addEventListener('message', event => {
+        observer.next(JSON.parse(event.data));
+      });
+
+      return () => {
+        socket.close();
+      };
+    });
   }
 }

@@ -5,7 +5,7 @@ import { Router } from '@angular/router';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.css'
+  styleUrls:  ['./app.component.css']
 })
 export class AppComponent {
   title = 'stock-exchange-dashboard';

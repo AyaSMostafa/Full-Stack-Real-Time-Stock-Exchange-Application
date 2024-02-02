@@ -1,0 +1,15 @@
+/* real-time-updates.component.css */
+
+.update-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .update-item {
+    border: 1px solid #4caf50;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+  }
+  
