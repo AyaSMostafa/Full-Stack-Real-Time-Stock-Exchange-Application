@@ -19,13 +19,25 @@ export class StocksDashboardComponent {
   }
 
   private loadRealTimeStockData(): void {
-    this.stockService.getRealTimeStockData().subscribe(
-      data => {
-        this.stocks = data;
-      },
-      error => {
-        console.error('Error loading real-time stock data:', error);
-      }
-    );
+      this.stockService.getRealTimeStockData().subscribe(
+        (data: any) => {
+          if (data && data.$values) {
+            this.stocks = data.$values;
+          } else {
+            // Handle the case where $values is undefined or null
+            this.stocks = [];
+          }
+        },
+        (error) => {
+          console.error('Error fetching stocks', error);
+        }
+      );
   }
+}
+export interface Stock {
+  symbol: number;
+  name: string;
+  currentPrice: number;
+  timestamp: string;
+  orders: any[]; // You might need to define the type of orders
 }

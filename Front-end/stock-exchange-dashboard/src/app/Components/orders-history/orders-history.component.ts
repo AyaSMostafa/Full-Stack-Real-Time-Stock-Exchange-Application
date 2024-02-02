@@ -17,10 +17,16 @@ export class OrdersHistoryComponent {
 
   private loadOrdersHistory(): void {
     this.orderService.getOrders().subscribe(
-      data => {
-        this.orders = data;
+      (data: any) => {
+        if (data && data.$values) {
+          this.orders = data.$values;
+          console.log(data);
+        } else {
+          // Handle the case where $values is undefined or null
+          this.orders = data;
+        }
       },
-      error => {
+      (error) => {
         console.error('Error loading orders history:', error);
       }
     );

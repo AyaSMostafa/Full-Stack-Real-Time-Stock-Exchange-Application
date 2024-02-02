@@ -1,5 +1,3 @@
-<!-- stocks-dashboard.component.html -->
-
 <div class="stocks-container">
   <div *ngFor="let stock of stocks" class="stock-item">
     <p>symbol: {{ stock.symbol }}</p>
@@ -7,4 +5,4 @@
     <p>Price: {{ stock.currentPrice | currency }}</p>
     <p>Last Updated: {{ stock.timestamp | date: 'medium' }}</p>
   </div>
-</div>
+</div> 
