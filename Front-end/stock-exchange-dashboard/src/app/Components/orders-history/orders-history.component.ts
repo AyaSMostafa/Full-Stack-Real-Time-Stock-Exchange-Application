@@ -20,7 +20,8 @@ export class OrdersHistoryComponent {
       (data: any) => {
         if (data && data.$values) {
           this.orders = data.$values;
-          console.log(data);
+          console.log(data.$values);
+
         } else {
           // Handle the case where $values is undefined or null
           this.orders = data;
